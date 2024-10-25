@@ -1,6 +1,9 @@
 import './App.css';
 import Header from './common/header';
 import Layout from './components/Layout';
+import Section from './components/Section';
+import AboutMe from './pages/AboutMe';
+import Project from './pages/Project';
 import Title from './pages/Title';
 
 function App() {
@@ -8,10 +11,21 @@ function App() {
     <>
       <Header />
       <Layout>
-        <Title />
-        <section id="about" style={{height : "500px"}}>about</section>
-        <section id="project" style={{ height: "500px" }}>about</section>
-        <section id="career" style={{ height: "500px" }}>about</section>
+        <Section bgColor='white' id="home">
+          <Title />
+        </Section>
+
+        <Section bgColor='' id="about" title='ABOUT ME'>
+          <AboutMe />
+        </Section>
+
+        <Section bgColor='' id="project">
+          <Project />
+        </Section>
+
+        <Section bgColor='' id="career">
+          <AboutMe />
+        </Section>
       </Layout>
     </>
   );

@@ -6,8 +6,12 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+
+      const isMobile = window.innerWidth <= 768;
+      const scrollOffset = isMobile ? 0 : offset;
+
       window.scrollTo({
-        top: elementPosition,
+        top: elementPosition - scrollOffset,
         behavior: "smooth",
       });
     }
@@ -15,17 +19,19 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <MenuItem onClick={() => handleScroll("home", 1000)} >KI HWAN's</MenuItem>
+      <MenuItem onClick={() => handleScroll("home")}>KI HWAN's</MenuItem>
       <MenuWrapper>
         {MENU.map((item, index) => (
-          <MenuItem key={index} onClick={() => handleScroll(item.link.toLowerCase(), 60)}>{item.title}</MenuItem>
+          <MenuItem key={index} onClick={() => handleScroll(item.link.toLowerCase(), 60)}>
+            {item.title}
+          </MenuItem>
         ))}
       </MenuWrapper>
     </Wrapper>
   );
 };
 
-export default Header
+export default Header;
 
 const Wrapper = styled.div`
   position: sticky;
@@ -35,27 +41,33 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
-  padding: 0px 50px;
+  padding: 0 20px; /* 모바일에서는 여백을 줄임 */
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 0.5px solid black;
-  z-index: 1000;
-  font-size: 20px;
+  z-index: 10;
+  font-size: 18px;
+
+  @media (max-width: 768px) {
+    height: 50px; 
+    font-size: 16px; 
+    padding: 0 15px; 
+  }
 `;
 
 const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 `;
 
 const MenuItem = styled.a`
   cursor: pointer;
   text-decoration: none;
-  color: black; 
+  color: black;
 
   &:hover {
     color: lightblue;
-    transition: all 0.5s;
+    transition: all 0.3s;
   }
 `;

@@ -20,7 +20,6 @@ const MainWrapper = styled.div`
 	
 	width: 100%;
 
-	margin-top: 5rem;
 	color: black;
 	background: white;
 `
