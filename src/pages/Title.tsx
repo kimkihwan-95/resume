@@ -1,9 +1,13 @@
 import styled from "styled-components"
+import { useMediaQuery } from 'react-responsive';
 import { ContentsWrapper, CustomFont } from "../common/Common"
 
 const Title = () => {
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
-    <CustomFont ftsize={30} ftHeight={50}>
+    <CustomFont ftsize={isMobile ? 20 : 30} ftHeight={isMobile ? 30 : 50}>
       반갑습니다.<br />
       경력 2년차 웹 프론트 개발자 <span style={{ fontSize: "1.3em", fontWeight: "bold" }}>김기환</span> 입니다.<br />
       도전적인 목표를 통해 배우고 습득하는 과정을 좋아합니다.<br />

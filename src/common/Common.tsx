@@ -13,6 +13,10 @@ export const CustomFont = styled.div<FontProps>`
     font-size: ${({ ftsize }) => `${ftsize}px`};
     font-weight: ${({ ftWeight }) => `${ftWeight}`};
     color: ${({ ftColor }) => `${ftColor}`};
+
+    @media (max-width: 768px) {
+    font-size: ${({ ftsize }) => `calc(${ftsize}px - 5px)`};
+  }
 `
 
 export const ContentsWrapper = styled.div`
@@ -34,5 +38,9 @@ export const FontBox = styled.div<FontProps>`
 
     word-break: keep-all; /* 줄바꿈을 방지하고, 필요한 경우만 줄바꿈 */
     text-align: center;
+
+    @media (max-width: 768px) {
+    font-size: ${({ ftsize }) => `calc(${ftsize}px - 6px)`};
+  }
 `;
 

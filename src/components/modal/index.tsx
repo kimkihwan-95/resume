@@ -6,7 +6,7 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title?: string;
-  children: React.ReactNode; // 자식 컴포넌트를 받기 위한 props
+  children: React.ReactNode;
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
@@ -46,6 +46,10 @@ const ModalContent = styled.div`
   max-height: 80vh; 
   overflow-y: auto; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    @media (max-width: 768px) {
+    max-height: 75vh;
+  }
 `;
 
 const ModalHeader = styled.div`

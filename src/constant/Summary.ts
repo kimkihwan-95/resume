@@ -22,3 +22,71 @@ export const PADMIN = {
     "React, TypeScirpt, Redux Toolkit, WebSocket, Zebra Web Print API"
   ]
 }
+
+export const BRAND = {
+  sum: [
+    "Header, Footer 제작",
+    "프로젝트 구조, 라우팅 바 제작",
+    "홈, AI PRICE,가시광 통신,언론 보도 제작",
+    "연혁 이미지->CSS,JavaScirpt 로 교체",
+    "/admin 접속시 콘텐츠 수정 기능 추가",
+    "반응형 웹 제작"
+  ],
+  skill: [
+    "Next.js,TypeScript, styled-component, zustand"
+  ]
+}
+
+export const SAMIN = {
+  sum: [
+    "전체 프로젝트 개발",
+    "Meterial_UI 커스텀 후 사용",
+    "데이터 시각화",
+    "반응형 웹 제작"
+  ],
+  skill: [
+    "React, TypeScript, contextAPI,styled-component, Meterial_UI,useQeury,ReactHookFoam"
+  ]
+}
+
+export const NPP = {
+  sum: [
+    "기존 웹 소켓 연동이 불가능 했던 레거시 코드 리뉴얼",
+    "프로젝트 전체 개발",
+    "테스트 및 배포 관리"
+  ],
+  skill: [
+   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+  ]
+}
+export const BUYING = {
+  sum: [
+    "신규 프로젝트 전체 개발",
+    "리모컨 동작 기능 추가",
+    "테스트 및 배포 관리"
+  ],
+  skill: [
+   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+  ]
+}
+export const BTS = {
+  sum: [
+    "신규 프로젝트 전체 개발",
+    "리모컨 동작 기능 추가",
+    "4개의 액션 버튼 동작 기능 추가",
+    "테스트 및 배포 관리"
+  ],
+  skill: [
+   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+  ]
+}
+export const QR = {
+  sum: [
+    "신규 프로젝트 전체 개발",
+    "모바일 웹으로 제어하기 위한 개발",
+    "테스트 및 배포 관리"
+  ],
+  skill: [
+   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+  ]
+}

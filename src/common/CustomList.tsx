@@ -19,6 +19,10 @@ export default ItemList;
 
 const ListWrapper = styled.ul`
   padding-left: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 const ListItem = styled.li`
@@ -29,5 +33,9 @@ const ListItem = styled.li`
     content: "•";
     color: lightblue;  // 점 색상만 적용
     margin-right: 8px;  // 텍스트와 점 사이의 간격 추가
+  }
+
+    @media (max-width: 768px) {
+    font-size: 15px;
   }
 `;

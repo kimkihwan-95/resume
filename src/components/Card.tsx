@@ -10,45 +10,46 @@ interface CardProp {
   skill?: string[];
   url?: string | null;
   more?: boolean;
-  onMoreClick?: () => void; // 클릭 이벤트 핸들러 추가
+  onMoreClick?: () => void;
 }
 
-const Card = ({ title, mainTitle, subTitle,  sumList, skill,  url, more, onMoreClick }: CardProp) => {
+const Card = ({ title, mainTitle, subTitle, sumList, skill, url, more, onMoreClick }: CardProp) => {
   return (
     <CardWrapper>
-      <div>
-        <FontBox ftsize={25} ftColor="white" ftWeight="800" bgColor="lightblue">
-          {title}
-        </FontBox>
-      </div>
-      <CustomFont ftsize={16} ftColor="gray">
-        {subTitle}
-      </CustomFont>
-      <CustomFont ftsize={20} ftColor="black">
-        {mainTitle}
-      </CustomFont>
-
-      {url && (
+      <ContentWrapper>
         <div>
-          <Link href={url} target="_blank" rel="noopener noreferrer">
-            {url}
-          </Link>
+          <FontBox ftsize={25} ftColor="white" ftWeight="800" bgColor="lightblue">
+            {title}
+          </FontBox>
         </div>
-      )}
+        <CustomFont ftsize={16} ftColor="gray">
+          {subTitle}
+        </CustomFont>
+        <CustomFont ftsize={20} ftColor="black">
+          {mainTitle}
+        </CustomFont>
 
-      <ItemList items={sumList} />
-      <div>
+        {url && (
+          <div>
+            <Link href={url} target="_blank" rel="noopener noreferrer">
+              {url}
+            </Link>
+          </div>
+        )}
 
+        <ItemList items={sumList} />
+      </ContentWrapper>
+
+      <FooterWrapper>
         <FontBox ftsize={20} ftColor="white" bgColor="lightblue">
           {skill}
         </FontBox>
-      </div>
-
-      {more && (
-        <MoreButton onClick={onMoreClick}>
-          READ ME
-        </MoreButton>
-      )}
+        {more && (
+          <MoreButton onClick={onMoreClick}>
+            More
+          </MoreButton>
+        )}
+      </FooterWrapper>
     </CardWrapper>
   );
 };
@@ -56,17 +57,32 @@ const Card = ({ title, mainTitle, subTitle,  sumList, skill,  url, more, onMoreC
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
   width: 100%;
-  height: 500px;
+  height: auto;
   box-shadow: 0 0 3px;
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
 
- @media (max-width: 768px) {
+  @media (max-width: 768px) {
     height: auto;
   }
+`;
+
+const ContentWrapper = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* 상단 내용 사이의 간격 */
+`;
+
+const FooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 10px; /* FooterWrapper를 ContentWrapper와 간격 설정 */
 `;
 
 const Link = styled.a`
@@ -81,9 +97,7 @@ const MoreButton = styled.div`
   height: 20px;
   padding: 10px;
   box-shadow: 0 0 3px;
-
   border-radius: 5px;
-
   cursor: pointer;
 
   &:hover {
