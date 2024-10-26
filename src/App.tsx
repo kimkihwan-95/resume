@@ -19,7 +19,7 @@ function App() {
           <AboutMe />
         </Section>
 
-        <Section bgColor='' id="project">
+        <Section bgColor='' id="Project" title='Project'>
           <Project />
         </Section>
 

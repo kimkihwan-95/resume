@@ -13,6 +13,4 @@ export default AboutMe
 const Contents = styled.div`
   display: flex;
   gap: 30px;
-  margin-top: 50px;
-
 `

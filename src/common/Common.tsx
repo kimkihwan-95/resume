@@ -6,7 +6,6 @@ type FontProps = {
     ftWeight?: string
     ftColor?: string
     bgColor?: string
-    bxSize?: number
 }
 
 export const CustomFont = styled.div<FontProps>`
@@ -22,14 +21,18 @@ export const ContentsWrapper = styled.div`
 `
 
 export const FontBox = styled.div<FontProps>`
-    display: flex;
+    display: inline-flex; /* 텍스트 길이에 따라 너비를 조절 */
     justify-content: center;
+    align-items: center;
     border-radius: 5px;
-    padding : 5px;
+    padding: 5px;
 
-    width: ${({ bxSize }) => `${bxSize}px`};
     font-size: ${({ ftsize }) => `${ftsize}px`};
     font-weight: ${({ ftWeight }) => `${ftWeight}`};
     color: ${({ ftColor }) => `${ftColor}`};
     background-color: ${({ bgColor }) => `${bgColor}`};
-`
+
+    word-break: keep-all; /* 줄바꿈을 방지하고, 필요한 경우만 줄바꿈 */
+    text-align: center;
+`;
+

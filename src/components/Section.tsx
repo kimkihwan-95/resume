@@ -44,6 +44,8 @@ const Contents = styled.div`
   align-items: center;
   width: 70%;
 
+  gap: 50px;
+
   /* 모바일 화면에서 너비를 90%로 설정 */
   @media (max-width: 768px) {
     width: 90%;

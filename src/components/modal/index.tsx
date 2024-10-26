@@ -16,7 +16,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
     <ModalOverlay onClick={onClose}>
       <ModalContent onClick={(e) => e.stopPropagation()}>
         <ModalHeader>
-          <h2>More</h2>
+          <h2>{title}</h2>
           <CloseButton onClick={onClose}>X</CloseButton>
         </ModalHeader>
         <ModalBody>{children}</ModalBody>
@@ -41,10 +41,10 @@ const ModalContent = styled.div`
   background: white;
   border-radius: 5px;
   padding: 20px;
-  max-width: 500px;
+  max-width: 900px;
   width: 100%;
-  max-height: 80vh; /* 최대 높이 설정 */
-  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 가능 */
+  max-height: 80vh; 
+  overflow-y: auto; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 `;
 

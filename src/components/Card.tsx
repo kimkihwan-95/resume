@@ -6,21 +6,21 @@ interface CardProp {
   title: string;
   mainTitle: string;
   subTitle: string;
-  bxSize: number;
-  skillbox?: number;
   sumList?: any;
   skill?: string[];
-  url?: string;
+  url?: string | null;
   more?: boolean;
   onMoreClick?: () => void; // 클릭 이벤트 핸들러 추가
 }
 
-const Card = ({ title, mainTitle, subTitle, bxSize, sumList, skill, skillbox, url, more, onMoreClick }: CardProp) => {
+const Card = ({ title, mainTitle, subTitle,  sumList, skill,  url, more, onMoreClick }: CardProp) => {
   return (
     <CardWrapper>
-      <FontBox ftsize={25} bxSize={bxSize} ftColor="white" ftWeight="800" bgColor="black">
-        {title}
-      </FontBox>
+      <div>
+        <FontBox ftsize={25} ftColor="white" ftWeight="800" bgColor="lightblue">
+          {title}
+        </FontBox>
+      </div>
       <CustomFont ftsize={16} ftColor="gray">
         {subTitle}
       </CustomFont>
@@ -37,13 +37,16 @@ const Card = ({ title, mainTitle, subTitle, bxSize, sumList, skill, skillbox, ur
       )}
 
       <ItemList items={sumList} />
-      <FontBox ftsize={20} bxSize={skillbox} ftColor="white" bgColor="black">
-        {skill}
-      </FontBox>
+      <div>
+
+        <FontBox ftsize={20} ftColor="white" bgColor="lightblue">
+          {skill}
+        </FontBox>
+      </div>
 
       {more && (
         <MoreButton onClick={onMoreClick}>
-        READ ME
+          READ ME
         </MoreButton>
       )}
     </CardWrapper>
@@ -56,10 +59,14 @@ const CardWrapper = styled.div`
   gap: 20px;
   width: 100%;
   height: 500px;
-  border: 1px solid black;
+  box-shadow: 0 0 3px;
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
+
+ @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Link = styled.a`
@@ -73,11 +80,16 @@ const MoreButton = styled.div`
   width: 80px;
   height: 20px;
   padding: 10px;
+  box-shadow: 0 0 3px;
 
-  border: 1px solid black;
   border-radius: 5px;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: lightblue;
+    border: none;
+  }
 `;
 
 export default Card;
