@@ -43,8 +43,7 @@ const Project = () => {
     <ProjectWrapper>
       <Card
         title="2023_AI_QR"
-        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 사용자 모바일기기 연동으로 기능 체험 앱</>}
-        // mainTitle={"Npp 기반의 사용자 모바일기기 연동으로 기능 체험 앱"}
+        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 사용자 모바일기기 연동으로 기능 체험 TV앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={QR.sum}
         skill={QR.skill}
@@ -53,7 +52,7 @@ const Project = () => {
       />
       <Card
         title="2023_ButtonSolution"
-        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 액션 버튼으로 영상과 이미지를 재생하는 앱</>}
+        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 액션 버튼으로 영상과 이미지를 재생하는 TV앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={BTS.sum}
         skill={BTS.skill}
@@ -62,7 +61,7 @@ const Project = () => {
         />
       <Card
         title="2023_BuyingGuide"
-        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 TV의 특징을 소개하는 앱</>}
+        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 TV의 특징을 소개하는 TV앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={BUYING.sum}
         skill={BUYING.skill}
@@ -71,7 +70,7 @@ const Project = () => {
       />
       <Card
         title="2023_Npp"
-        mainTitle="CMS기능의 삼성리테일샵에 설치되는 Tizen기반의 개발"
+        mainTitle="CMS기능의 삼성리테일샵에 설치되는 Tizen기반의 TV앱개발"
         subTitle="2024.01 ~ 2024.06"
         sumList={NPP.sum}
         skill={NPP.skill}
@@ -80,7 +79,7 @@ const Project = () => {
       />
       <Card
         title="SamsungRetail_App_Admin"
-        mainTitle="전 세계 삼성 스토어에서 사용하는 앱을 관리하는 admin 페이지 제작"
+        mainTitle="전 세계 삼성리테일샵에 사용하는 앱을 관리하는 admin 페이지 제작"
         subTitle="2023.11.03 ~ 2024.05"
         sumList={SAMIN.sum}
         skill={SAMIN.skill}
@@ -108,7 +107,7 @@ const Project = () => {
       />
       <Card
         title="2022_PRICELAB_TV"
-        mainTitle="PRICELAB 매장 내 광고 영상 재생 앱 개발"
+        mainTitle="PRICELAB 매장 내 광고 영상 재생 웹 개발"
         subTitle="2022.08.16 ~ 2022.10.04"
         sumList={TVAD.sum}
         skill={TVAD.skill}
