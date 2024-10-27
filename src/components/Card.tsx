@@ -4,7 +4,7 @@ import ItemList from "../common/CustomList";
 
 interface CardProp {
   title: string;
-  mainTitle: string;
+  mainTitle: any;
   subTitle: string;
   sumList?: any;
   skill?: string[];

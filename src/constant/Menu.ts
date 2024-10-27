@@ -1,14 +1,14 @@
 export const MENU = [
   {
+    title: "Work Experience",
+    link: "project"
+  },
+  {
     title: "About Me",
     link : "about"
   },
   {
-    title: "Project",
-    link: "project"
-  },
-  {
-    title: "Career",
+    title: "Skill",
     link: "career"
   },
 

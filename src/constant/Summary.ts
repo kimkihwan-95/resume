@@ -33,7 +33,7 @@ export const BRAND = {
     "반응형 웹 제작"
   ],
   skill: [
-    "Next.js,TypeScript, styled-component, zustand"
+    "Next.js, TypeScript, styled-component, zustand"
   ]
 }
 
@@ -45,7 +45,7 @@ export const SAMIN = {
     "반응형 웹 제작"
   ],
   skill: [
-    "React, TypeScript, contextAPI,styled-component, Meterial_UI,useQeury,ReactHookFoam"
+    "React, TypeScript, contextAPI, styled-component, Meterial_UI, useQeury, ReactHookFoam"
   ]
 }
 
@@ -53,20 +53,24 @@ export const NPP = {
   sum: [
     "기존 웹 소켓 연동이 불가능 했던 레거시 코드 리뉴얼",
     "프로젝트 전체 개발",
-    "테스트 및 배포 관리"
+    "테스트 및 배포 관리",
+    "다국어 지원을 위한 i18n 사용",
+    "WebSocket 통신 구현"
   ],
   skill: [
-   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
   ]
 }
 export const BUYING = {
   sum: [
     "신규 프로젝트 전체 개발",
     "리모컨 동작 기능 추가",
-    "테스트 및 배포 관리"
+    "테스트 및 배포 관리",
+    "다국어 지원을 위한 i18n 사용",
+    "WebSocket 통신 구현"
   ],
   skill: [
-   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
   ]
 }
 export const BTS = {
@@ -74,19 +78,23 @@ export const BTS = {
     "신규 프로젝트 전체 개발",
     "리모컨 동작 기능 추가",
     "4개의 액션 버튼 동작 기능 추가",
-    "테스트 및 배포 관리"
+    "테스트 및 배포 관리",
+    "다국어 지원을 위한 i18n 사용",
+    "WebSocket 통신 구현"
   ],
   skill: [
-   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
   ]
 }
 export const QR = {
   sum: [
     "신규 프로젝트 전체 개발",
     "모바일 웹으로 제어하기 위한 개발",
-    "테스트 및 배포 관리"
+    "테스트 및 배포 관리",
+    "다국어 지원을 위한 i18n 사용",
+    "WebSocket 통신 구현"
   ],
   skill: [
-   "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component" 
+    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
   ]
 }

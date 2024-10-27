@@ -43,7 +43,8 @@ const Project = () => {
     <ProjectWrapper>
       <Card
         title="2023_AI_QR"
-        mainTitle="Npp 기반의 사용자 모바일기기 연동으로 기능 체험 앱"
+        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 사용자 모바일기기 연동으로 기능 체험 앱</>}
+        // mainTitle={"Npp 기반의 사용자 모바일기기 연동으로 기능 체험 앱"}
         subTitle="2024.01 ~ 2024.06"
         sumList={QR.sum}
         skill={QR.skill}
@@ -52,16 +53,16 @@ const Project = () => {
       />
       <Card
         title="2023_ButtonSolution"
-        mainTitle="Npp 기반의 액션 버튼으로 영상과 이미지를 재생하는 앱"
+        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 액션 버튼으로 영상과 이미지를 재생하는 앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={BTS.sum}
         skill={BTS.skill}
         more
         onMoreClick={() => openModal("bts")}
-      />
+        />
       <Card
         title="2023_BuyingGuide"
-        mainTitle="Npp 기반의 TV의 특징을 소개하는 앱"
+        mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 TV의 특징을 소개하는 앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={BUYING.sum}
         skill={BUYING.skill}
@@ -150,8 +151,8 @@ const ProjectWrapper = styled.div`
   }
 `;
 
-const Contents = styled.div`
-  display: flex;
-  gap: 30px;
-  margin-top: 50px;
+const Point = styled.span`
+  cursor: pointer;
+  color: blue
 `
+

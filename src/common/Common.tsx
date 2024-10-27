@@ -11,7 +11,8 @@ type FontProps = {
 export const CustomFont = styled.div<FontProps>`
     line-height: ${({ ftHeight }) => `${ftHeight}px`};
     font-size: ${({ ftsize }) => `${ftsize}px`};
-    font-weight: ${({ ftWeight }) => `${ftWeight}`};
+    /* font-weight: ${({ ftWeight }) => `${ftWeight}`}; */
+    font-weight: bold;
     color: ${({ ftColor }) => `${ftColor}`};
 
     @media (max-width: 768px) {

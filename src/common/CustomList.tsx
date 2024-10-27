@@ -28,6 +28,7 @@ const ListWrapper = styled.ul`
 const ListItem = styled.li`
   list-style-type: none;  /* 기본 점 제거 */
   font-size: 20px;
+  font-weight: 500;
 
   &::before {
     content: "•";

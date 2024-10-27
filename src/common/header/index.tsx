@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
-  padding: 0 20px; /* 모바일에서는 여백을 줄임 */
+  padding: 0 20px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 0.5px solid black;
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     height: 50px; 
-    font-size: 16px; 
+    font-size: 12px; 
     padding: 0 15px; 
   }
 `;
