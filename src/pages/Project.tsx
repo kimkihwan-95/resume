@@ -42,7 +42,7 @@ const Project = () => {
   return (
     <ProjectWrapper>
       <Card
-        title="2023_AI_QR"
+        title="2024_AI_QR"
         mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 사용자 모바일기기 연동으로 기능 체험 TV앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={QR.sum}
@@ -51,7 +51,7 @@ const Project = () => {
         onMoreClick={() => openModal("qr")}
       />
       <Card
-        title="2023_ButtonSolution"
+        title="2024_ButtonSolution"
         mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 액션 버튼으로 영상과 이미지를 재생하는 TV앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={BTS.sum}
@@ -60,7 +60,7 @@ const Project = () => {
         onMoreClick={() => openModal("bts")}
         />
       <Card
-        title="2023_BuyingGuide"
+        title="2024_BuyingGuide"
         mainTitle={<><Point onClick={() => openModal("npp")}>Npp</Point>기반의 TV의 특징을 소개하는 TV앱</>}
         subTitle="2024.01 ~ 2024.06"
         sumList={BUYING.sum}
@@ -69,7 +69,7 @@ const Project = () => {
         onMoreClick={() => openModal("buy")}
       />
       <Card
-        title="2023_Npp"
+        title="2024_Npp"
         mainTitle="CMS기능의 삼성리테일샵에 설치되는 Tizen기반의 TV앱개발"
         subTitle="2024.01 ~ 2024.06"
         sumList={NPP.sum}
@@ -78,7 +78,7 @@ const Project = () => {
         onMoreClick={() => openModal("npp")}
       />
       <Card
-        title="SamsungRetail_App_Admin"
+        title="SamsungRetail_App_ADMIN"
         mainTitle="전 세계 삼성리테일샵에 사용하는 앱을 관리하는 admin 페이지 제작"
         subTitle="2023.11.03 ~ 2024.05"
         sumList={SAMIN.sum}
@@ -87,7 +87,7 @@ const Project = () => {
         onMoreClick={() => openModal("sadmin")}
       />
       <Card
-        title="2023_CHEESEADE_HOMEPAGE"
+        title="CHEESEADE_HOMEPAGE"
         mainTitle="CHEESEADE 홈페이지 리뉴얼 제작"
         subTitle="2023.08.23 ~ 2023.10.16"
         sumList={BRAND.sum}
@@ -97,7 +97,7 @@ const Project = () => {
         onMoreClick={() => openModal("brand")}
       />
       <Card
-        title="2022_PRICELAB_ADMIN"
+        title="PRICELAB_ADMIN"
         mainTitle="PRICELAB 매장 솔루션 관리자 페이지 제작"
         subTitle="2022.10.18 ~ 2023.06.23"
         sumList={PADMIN.sum}
@@ -106,7 +106,7 @@ const Project = () => {
         onMoreClick={() => openModal("padmin")}
       />
       <Card
-        title="2022_PRICELAB_TV"
+        title="PRICELAB_TV"
         mainTitle="PRICELAB 매장 내 광고 영상 재생 웹 개발"
         subTitle="2022.08.16 ~ 2022.10.04"
         sumList={TVAD.sum}
