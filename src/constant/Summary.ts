@@ -45,7 +45,7 @@ export const SAMIN = {
     "반응형 웹 제작"
   ],
   skill: [
-    "React, TypeScript, contextAPI, styled-component, Meterial_UI, useQeury, ReactHookFoam"
+    "React, TypeScript, contextAPI, styled-component, Meterial_UI, ReactQuery, ReactHookFoam"
   ]
 }
 
@@ -58,7 +58,7 @@ export const NPP = {
     "WebSocket 통신 구현"
   ],
   skill: [
-    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
+    "React, Tizen, TypeScript, i18n, recoil, contextAPI,styled-component, WebSocket"
   ]
 }
 export const BUYING = {
@@ -70,7 +70,7 @@ export const BUYING = {
     "WebSocket 통신 구현"
   ],
   skill: [
-    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
+    "React, Tizen, TypeScript, i18n, recoil, contextAPI,styled-component, WebSocket"
   ]
 }
 export const BTS = {
@@ -83,7 +83,7 @@ export const BTS = {
     "WebSocket 통신 구현"
   ],
   skill: [
-    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
+    "React, Tizen, TypeScript, i18n, recoil, contextAPI,styled-component, WebSocket"
   ]
 }
 export const QR = {
@@ -95,6 +95,6 @@ export const QR = {
     "WebSocket 통신 구현"
   ],
   skill: [
-    "React, Tizen, TypeScript, i18n, recoil ,zustand, contextAPI,styled-component, WebSocket"
+    "React, Tizen, TypeScript, i18n, recoil, contextAPI,styled-component, WebSocket"
   ]
 }
